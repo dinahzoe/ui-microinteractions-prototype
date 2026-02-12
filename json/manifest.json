@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "Nimm eine Pause",
+    "version": "1.0.0",
+    "description": "Browserextension mit basic permissions",
+    "permissions": [
+        "notifications",
+        "alarms",
+        "tabs"
+    ],
+    "_comment": "erlaubt der Extension, Benachrichtigungen anzuzeigen, https://developer.chrome.com/docs/extensions/reference/manifest?hl=de",
+    "background": {
+        "service_worker": "main.js",
+        "_comment": "https://developer.mozilla.org/de/docs/Mozilla/Add-ons/WebExtensions/manifest.json/background"
+    }
+}
