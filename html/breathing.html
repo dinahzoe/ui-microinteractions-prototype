@@ -1,0 +1,61 @@
+<!-- inspiriert/erlernte Dinge aus dem Kurs Frontend–Design Web: Fortgeschrittene Techniken -->
+
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atemübung</title>
+
+    <!-- Styling der HTML Dateien -->
+    <link rel="stylesheet" href="../styles/styles.css" />
+</head>
+
+<body>
+
+    <!-- main < eigentlicher Beginn der Seite -->
+    <main class="background">
+
+        <h1>Atemübung</h1>
+
+        <!-- Karten führen zu einzelnen Unterseiten < Hauptnavigation über große Buttons 
+        aria-label = Barrierefreiheit: Screenreadern (für blinde Menschen) -->
+        <section class="sphere" aria-label="Atemübung mit Kugel"> <!-- Ball mit Animation -->
+            <p class="fadeIn">Einatmen</p>
+            <!-- wird Kugel größer = dieser Part wird eingeplendet und Part "Ausatmen" wird ausgeblendet -->
+            <p class="fadeOut" aria-hidden="true">Ausatmen</p> <!-- wird Kugel kleiner = dieser Part wird eingeplendet und Part "Einatmen" wird ausgeblendet 
+        + Barrierefreiheit: Screenreader sollen den Text ignorieren -->
+        </section>
+
+        <section class="selfReflectionForm" aria-label="Selbstreflexion" aria-hidden="true"> 
+        <!-- Formular soll erst eingeblendet werden wenn die Atemübung vorbei ist und Kugel ausgeblendet wird nach Abschluss -->
+
+            <h2>Kurze Selbstreflexion</h2>
+            <form action="mailto:dinahzoe02@gmail.com" method="post">
+                <fieldset>
+                    <legend>Fühlen Sie sich ruhiger?</legend>
+                    <label for="feedback1">Antwort</label>
+                    <input id="feedback1" type="text" placeholder="Antwort">
+                </fieldset>
+
+                <fieldset>
+                    <legend>War die Übung hilfreich?</legend>
+                    <label for="feedback2">Antwort</label>
+                    <input id="feedback2" type="text" placeholder="Antwort">
+                </fieldset>
+
+               <button type="submit">Anonym Abschicken</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+        <p>Extension Prototyp</p>
+    </footer>
+
+</body>
+
+</html>
