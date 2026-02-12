@@ -24,12 +24,15 @@
         <section class="sphere" aria-label="Atemübung mit Kugel"> <!-- Ball mit Animation -->
             <p class="fadeIn">Einatmen</p>
             <!-- wird Kugel größer = dieser Part wird eingeplendet und Part "Ausatmen" wird ausgeblendet -->
-            <p class="fadeOut" aria-hidden="true">Ausatmen</p> <!-- wird Kugel kleiner = dieser Part wird eingeplendet und Part "Einatmen" wird ausgeblendet 
-        + Barrierefreiheit: Screenreader sollen den Text ignorieren -->
+            <p class="fadeOut">Ausatmen</p>
+            <!-- wird Kugel kleiner = dieser Part wird eingeplendet und Part "Einatmen" wird ausgeblendet -->
         </section>
 
-        <section class="selfReflectionForm" aria-label="Selbstreflexion" aria-hidden="true"> 
-        <!-- Formular soll erst eingeblendet werden wenn die Atemübung vorbei ist und Kugel ausgeblendet wird nach Abschluss -->
+        <a href="mainWindow.html" class="button">Zurück</a>
+
+
+        <section class="selfReflectionForm" aria-label="Selbstreflexion">
+            <!-- Formular soll erst eingeblendet werden wenn die Atemübung vorbei ist und Kugel ausgeblendet wird nach Abschluss -->
 
             <h2>Kurze Selbstreflexion</h2>
             <form action="mailto:dinahzoe02@gmail.com" method="post">
@@ -45,7 +48,8 @@
                     <input id="feedback2" type="text" placeholder="Antwort">
                 </fieldset>
 
-               <button type="submit">Anonym Abschicken</button>
+                <button type="submit">Anonym Abschicken</button>
+                <a href="mainWindow.html" class="button">Zurück</a>
             </form>
         </section>
 
