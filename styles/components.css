@@ -1,0 +1,32 @@
+/* CARDS */
+
+/* Flexbox-Container für cards < nebeneinander, beschreibt den Container */
+.cards {
+  display: flex; 
+  justify-content: center;       /* horizontal zentrieren*/
+  align-items: stretch;          /* Kinder gleich hoch strecken, Querachse */
+  gap: var(--space-lg);          /* Abstand zwischen cards horizontal */
+  flex-wrap: wrap;               /* umbrechen auf kleineren Screens */
+}
+
+/* Karten mit weißem Hintergrund, Hover */
+.card {
+  max-width: 200px;              /* max Breite der Karten */
+  background: var(--beige-pale);      /* weißer Hintergrund */
+  border-radius: var(--radius);  /* abgerundete Ecken */
+  padding: var(--space-sm);      /* Innenabstand */
+  box-shadow: var(--shadow);     /* Schatten für 3D-Effekt, hebt sich ab auch ohne Hover */
+
+  box-shadow: var(--shadow-lg);   /* Hover-Effekt: nach oben + größer < größerer Schatten */
+  margin-bottom: var(--space-md); /* Abstand unten, sonst Karten kleben aneinander */
+}
+
+/* Hover Effekt */
+.card:hover {
+  background: var(--white); 
+}
+
+/* Beim Klicken */
+.card:active {
+  background: var(--blue-table);   /* dunkler als hover */
+}

@@ -1,0 +1,6 @@
+/* Dateien bündeln in styles.css */
+@import url("base.css");
+@import url("components.css");
+@import url("spacing.css");
+@import url("color-scheme.css");
+@import url("responsive.css");

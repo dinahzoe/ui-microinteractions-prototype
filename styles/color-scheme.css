@@ -1,0 +1,53 @@
+:root {
+  /* INTERAKTIONSFARBEN (Buttons, Links, aktive Elemente) */
+  --blue: #495b6d;
+  --blue-light: #8994a4;
+  --blue-border: #b2c7d3;
+  --blue-table: #d4dce0;
+
+  /* warmer ruhiger Hintergrund */
+  --apricot: #ddb e9c;
+  --rose: #efcfbf;
+
+  /* natürliches grün */
+  --green-dark: #272f15;
+  --green-soft: #566352;
+  --green-light: #8c977f;
+
+  /* neutrale Farben */
+  --beige-dark: #665241;
+  --beige-mid: #ab9b8c;
+  --beige-light: #c2bbb2;
+  --beige-soft: #e1d6c9;
+  --beige-pale: #f5ece0;
+
+  /* Basisfarben */
+  --white: #fceee6;
+  --gray-100: #e2c4c2;
+  --gray-200: #c39064;
+  --gray-300: #94986a;
+  --gray-400: #444637;
+  --gray-800: #643e29;
+
+  /*  */
+  --code-bg: #1e1e1e;
+  --code-text: #d4d4d4;
+
+  /* SHADOWS < ruhig & soft */
+  --shadow-sm: 0 2px 8px rgba(0,0,0,0.06);
+  --shadow: 0 6px 16px rgba(0,0,0,0.08);
+  --shadow-lg: 0 12px 20px rgba(0,0,0,0.12);
+  --shadow-hover: 0 4px 12px rgba(0,0,0,0.15);
+
+  /* RADIUS */
+  --radius: 10px;
+  --radius-sm: 5px;
+  --radius-xs: 3px;
+  --radius-pill: 50px;
+
+  /* BORDER */
+  --border-width: 2px;
+  --border-width-thick: 3px;
+  --border-width-heavy: 4px;
+  --border-width-accent: 6px;
+}

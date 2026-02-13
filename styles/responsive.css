@@ -1,0 +1,25 @@
+
+/* Größere Darstellung auf großen Bildschirmen */
+@media (min-width: 1000px) {
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
+
+  .card {
+    max-width: 260px;
+    padding: 1.5rem;
+  }
+
+  .cards {
+    gap: 2.5rem;
+  }
+}

@@ -12,19 +12,20 @@
     <link rel="stylesheet" href="../styles/styles.css" />
 </head>
 
-<body>
+<body class="backgroundBreathing">
 
     <!-- main < eigentlicher Beginn der Seite -->
-    <main class="backgroundBreathing">
+    <main>
 
         <h1>Atemübung</h1>
 
         <!-- Karten führen zu einzelnen Unterseiten < Hauptnavigation über große Buttons 
         aria-label = Barrierefreiheit: Screenreadern (für blinde Menschen) -->
         <section class="sphere" aria-label="Atemübung mit Kugel"> <!-- Ball mit Animation -->
-            <p class="fadeIn">Einatmen</p>
+            <div class="ball" aria-hidden="true"></div>
+            <p class="inhale">Einatmen</p>
             <!-- wird Kugel größer = dieser Part wird eingeplendet und Part "Ausatmen" wird ausgeblendet -->
-            <p class="fadeOut">Ausatmen</p>
+            <p class="exhale">Ausatmen</p>
             <!-- wird Kugel kleiner = dieser Part wird eingeplendet und Part "Einatmen" wird ausgeblendet -->
         </section>
 
@@ -54,11 +55,6 @@
         </section>
 
     </main>
-
-    <!-- footer -->
-    <footer class="footer">
-        <p>Extension Prototyp</p>
-    </footer>
 
 </body>
 
