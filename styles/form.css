@@ -1,0 +1,56 @@
+fieldset {
+  max-width: 600px;            /* Formular maximal 600px breit */
+  margin: 0 auto; /* Formular zentriert */
+  border: 1.5px solid var(--beige-dark); /* blauer Rahmen */
+  border-radius: 5px;
+  padding: var(--space-md);       /* Innenabstand */
+  background: var(--green-extrem-light);       /* weißer Hintergrund */
+  margin-bottom: var(--space-sm); 
+}
+
+/* Überschrift der einzelnen gebündelten Daten */
+legend {
+  color: var(--blue);             /* Textfarbe blau */
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Überschrift der einzelnen Daten */
+label {
+  display: block;                 /* eigene Zeile über Input < untereinander */
+  color: var(--blue);             /* blau */
+  font-size: 16px;
+  margin-bottom: var(--space-xxs);
+}
+
+input {
+  width: 100%;                    /* volle Breite */
+  border: 1px solid var(--blue); /* heller Rahmen */
+  border-radius: 3px;
+}
+
+button[type="submit"] {
+    margin: var(--space-sm) 0 var(--space-md) 0; /* oben, rechts, unten, links */
+    color: var(--white);
+    font-size: 15px;
+    font-weight: bold;
+    padding-top: var(--space-xs);
+    padding-bottom: var(--space-xs);
+    padding-left: var(--space-xs);
+    padding-right: var(--space-xs);
+    background: var(--gray-400);
+    border: 1px solid var(--green-extrem-light);
+    border-radius: 15px;
+}
+
+button[type="submit"]:hover{
+    color: var(--gray-400);
+    background: var(--white);
+    border-color: var(--green-extrem-light);
+}
+
+.layout {
+  max-width: 650px;
+  margin: 0 auto;
+  text-align: right;
+}
