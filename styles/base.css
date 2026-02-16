@@ -29,14 +29,13 @@ button {
     padding-bottom: var(--space-xs);
     padding-left: var(--space-xs);
     padding-right: var(--space-xs);
-    background: var(--beige-dark);
+    background: var(--green-light);
     border: 1px solid var(--green-extrem-light);
-    border-radius: 19px;
 }
 
 button:hover{
-    color: var(--beige-dark);
-    background: var(--white);
+    color: var(--green-light);
+    background: var(--beige-pale);
     border-color: var(--green-extrem-light);
 }
 
