@@ -1,0 +1,20 @@
+/* Kreis */
+.ballFokus {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: var(--beige-mid);
+  animation: follow 10s ease-in-out infinite; 
+  margin: 40px auto;
+}
+
+@keyframes follow {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(225px); } /* 250px runter auf Y Achse */
+  100% { transform: translateY(0); }
+}
+
+.h2 {
+    color: var(--green-light);
+}

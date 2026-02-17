@@ -1,0 +1,44 @@
+
+/* Notiz mit Ideen eiblenden wenn man über den Button hovert */
+
+/* transition hat immer Anfangs- und Endzustand */
+/* start */
+.noteIdeas {
+    /* Elterncontainer */
+    position: relative;
+    /* mit top, left, bottom, right verschieben, ohne dass es andere Elemente aus dem Layout drängt */
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+.noteIdeas .note {
+    position: absolute;
+    /*relative = „normaler Platz + Verschiebung möglich"
+        absolute = „frei schwebend, Platz wird nicht blockiert"
+        */
+    bottom: var(--space-sm);
+    right: 0;
+    /* positioniert die Notiz unten rechts im .noteIdeas-Container */
+    padding: 1em; /*  Innenabstand um die Karten herum */
+    opacity: 0; /* transparent, wird schön eingeblendet */
+    transition: transform 2s, opacity 3s;
+    /* Alle Änderungen an transform werden über 2 Sekunden sanft animiert */
+    transform: translate(100%, 0);
+    /* x-Achse < Element ist 100% seiner eigenen Breite nach rechts verschoben (außerhalb, nicht sichtbar) */
+}
+
+/* end */
+.noteIdeas button:hover+.note {
+    /* der letzte Absatz */
+    transform: translate(0, 0);
+    /* Element ist an normaler Position (sichtbar im Bildschirm)
+    translateY(100%) verschiebt das Element um 100 % seiner eigenen Höhe nach unten < 100 % bezieht sich immer auf die Größe des Elements selbst, nicht des Containers */
+    opacity: 1;
+    /* voll sichtbar */
+}
+
+.card {
+    width: 320px; /* breiter */
+    
+}

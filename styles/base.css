@@ -41,28 +41,25 @@ button:hover{
 
 /* BACKGROUND */
 .background {
-    background: url("../image/background2.png");
+    background: url("../image/background_soft.png");
 }
 
 .backgroundBreathing {
     background: var(--green-extrem-light);
 }
 
-.gradientBackground {
-    background: var(--apricot);
-}
-
 .focusBackground {
-    background: var(--apricot);
+    background: var(--beige-soft);
 }
 
 /* ÜBERSCHRIFTEN */
 h1{
   font-weight: bold;
-  line-height: 2;  /* Zeilenabstand < line-height regelt Zeilenabstand, Spacing-Variablen Abstände zwischen Elementen */
+  line-height: 1.6;  /* Zeilenabstand < line-height regelt Zeilenabstand, Spacing-Variablen Abstände zwischen Elementen */
   color: var(--green-dark);
   font-size: 55px;
   text-align: center;
+  letter-spacing: var(--space-xxxs);
 }
 
 h2{
@@ -87,8 +84,8 @@ p{
 /* ZURÜCK BUTTON */
 .button {
     position: fixed;
-    top: 20px;
-    left: 20px;
+    top: var(--space-sm);
+    left: var(--space-sm);
     font-weight: bold;
     font-size: 18px;
     padding-top: var(--space-xxs);
@@ -101,4 +98,25 @@ p{
 
 .button:hover{
     border-color: var(--blue-light)
+}
+
+.icon1, .icon2, .icon3 {
+    width: 100%; 
+    max-width: 200px; 
+    aspect-ratio: 1 / 1;  /* immer quadratisch */
+    margin: -20px auto;
+    background-size: contain;
+    background-repeat: no-repeat; /* Bild soll sich nicht widerholen */
+    background-position: center; /*  */
+}
+.icon1 {
+    background-image: url("../image/icon_breath.png");
+}
+
+.icon2 {
+    background-image: url("../image/icon_focus.png");
+}
+
+.icon3 {
+    background-image: url("../image/icon_structure.png");
 }
