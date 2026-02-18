@@ -27,7 +27,7 @@ chrome.alarms.onAlarm.addListener(async () => { // onAlarm, wenn Timer klingelt 
 
         chrome.notifications.create({
             type: 'basic', // Pflicht für Notifications
-            iconUrl: 'icon.png', // Wichtig, da Notification sonst oft nicht erscheint < wichtig für Chrome
+            iconUrl: 'icon_structure.png', // Wichtig, da Notification sonst oft nicht erscheint < wichtig für Chrome
             title: 'Zeit für eine Pause',
             message: `Du hast gerade ${showAmountofTabs} Tabs offen, Zeit für Struktur!`,
             buttons: [{ title: 'Hier klicken für deine Pause' }]
@@ -37,7 +37,7 @@ chrome.alarms.onAlarm.addListener(async () => { // onAlarm, wenn Timer klingelt 
 
         chrome.notifications.create({
             type: 'basic',
-            iconUrl: 'icon.png',
+            iconUrl: 'icon_focus.png',
             title: 'Zeit für eine Pause',
             message: "Nimm dir Zeit für eine kurze Pause oder Konzentrationsübungen!",
             buttons: [{ title: 'Hier klicken für deine Pause' }]
