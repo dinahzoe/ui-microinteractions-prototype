@@ -3,23 +3,23 @@
 @media (min-width: 1000px) {
 
   h1 {
-    font-size: 3.5rem;
+    font-size: 56px;
   }
 
   h2 {
-    font-size: 1.6rem;
+    font-size: 26px;
   }
 
   p {
-    font-size: 1.1rem;
+    font-size: 18px;
   }
 
   .card {
     max-width: 260px;
-    padding: 1.5rem;
+    padding: 24px;
   }
 
   .cards {
-    gap: 2.5rem;
+    gap: 40px;
   }
 }

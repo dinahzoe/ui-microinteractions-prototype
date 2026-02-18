@@ -1,33 +1,31 @@
 /* Kreis */
 .ball {
-  position: relative;
   width: 250px;
   height: 250px;
   border-radius: 50%;
   background: var(--white);
   animation: breathe 10s 4 ease-in-out forwards; /* Widerholung ist 4 mal, forwards wichtig damit Übergang zwischen Ball und Form optisch stimmt */
-  margin: 80px auto;
+  margin: var(--space-3xl) auto;
 }
 
 /* Einatmen/ Ausatmen Text */
 .inhale {
   animation: inhaleText 10s 4 forwards; /* Widerholung ist 4 mal, forwards wichtig damit animation nach der letzten Widerholung beim Endzustand bleibt also opacity = 0 */
-  font-size: 1.5rem;
+  font-size: 24px;
 }
 
 .exhale {
   animation: exhaleText 10s 4 forwards;
-  font-size: 1.5rem;
+  font-size: 24px;
 }
-
 
 /* Beide Texte exakt übereinanderlegen */
 .inhale,
 .exhale {
-  position: absolute; /* relativ zum Ball */
+  position: absolute; /* Position relativ zum nächsten Eltern-Element < body */
   top: 50%;
   left: 50%;
-  transform: translate(-50%,450%);
+  transform: translate(-50%,450%); /* mittig, tiefer plaziert */
   color: var(--green-soft);
 }
 
@@ -43,7 +41,7 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@keyframes
 https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/transform-function/scale
 */
 
-@keyframes breathe {
+@keyframes breathe { /* @keyframes = Beschreibt die Schritte einer Animation */
   0%   { transform: scale(0.8); }
   50%  { transform: scale(1.2); }
   100% { transform: scale(0.8); }

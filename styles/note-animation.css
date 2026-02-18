@@ -1,3 +1,9 @@
+.note {
+    list-style: none; /* ohne Aufzählpunkte */
+    text-align: center;
+    color: var(--blue); /* li anstatt p, aber gleich stylen */
+    line-height: 1.8;
+}
 
 /* Notiz mit Ideen eiblenden wenn man über den Button hovert */
 
@@ -6,22 +12,25 @@
 .noteIdeas {
     /* Elterncontainer */
     position: relative;
-    /* mit top, left, bottom, right verschieben, ohne dass es andere Elemente aus dem Layout drängt */
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
+    /* mit top, left, bottom, right verschieben, ohne dass es andere Elemente aus dem Layout drängt, Kinder wie Button bewegen sich mit */
+    position: fixed; /* klebt unten rechts am Bildschirm */
+    right: var(--space-md);
+    bottom: var(--space-md);
 }
 
-.noteIdeas .note {
-    position: absolute;
-    /*relative = „normaler Platz + Verschiebung möglich"
-        absolute = „frei schwebend, Platz wird nicht blockiert"
-        */
+.note {
+    position: absolute; /* Positioniert sich relativ zum nächsten relative-Elternteil */
+    /* relative = macht ein Element zum Bezugspunkt
+       absolute = richtet sich an diesem Bezugspunkt aus
+    */
     bottom: var(--space-sm);
+    /* bestimmt, wie weit vom unteren Rand entfernt das Element steht */
     right: 0;
-    /* positioniert die Notiz unten rechts im .noteIdeas-Container */
-    padding: 1em; /*  Innenabstand um die Karten herum */
-    opacity: 0; /* transparent, wird schön eingeblendet */
+    /* positioniert die Notiz unten rechts im .noteIdeas-Container damit das Element ganz rechts im Container sitzt */
+    padding: 1em;
+    /* Innenabstand um die Karten herum */
+    opacity: 0;
+    /* transparent, wird schön eingeblendet */
     transition: transform 2s, opacity 3s;
     /* Alle Änderungen an transform werden über 2 Sekunden sanft animiert */
     transform: translate(100%, 0);
@@ -38,7 +47,7 @@
     /* voll sichtbar */
 }
 
-.card {
-    width: 320px; /* breiter */
-    
+.noteIdeas .card {
+    width: 320px;
+    /* breiter */
 }

@@ -1,13 +1,10 @@
 :root {
-  /* INTERAKTIONSFARBEN (Buttons, Links, aktive Elemente) */
+
+  /* natürliches blau */
   --blue: #495b6d;
   --blue-light: #8994a4;
-  --blue-border: #b2c7d3;
-  --blue-table: #d4dce0;
-
-  /* warmer ruhiger Hintergrund */
-  --apricot: #ddbe9c;
-  --rose: #efcfbf;
+  --blue-soft: #b2c7d3;
+  --blue-extrem-light: #d4dce0;
 
   /* natürliches grün */
   --green-dark: #272f15;
@@ -15,12 +12,14 @@
   --green-light: #8c977f;
   --green-extrem-light:#e2ddcb;
 
-  /* neutrale Farben */
+  /* neutrale Farben beige/rosa */
   --beige-dark: #665241;
   --beige-mid: #ab9b8c;
   --beige-light: #c2bbb2;
   --beige-soft: #e1d6c9;
   --beige-pale: #f5ece0;
+  --apricot: #ddbe9c;
+  --rose: #efcfbf;
 
   /* Basisfarben */
   --white: #fceee6;
@@ -30,25 +29,16 @@
   --gray-400: #444637;
   --gray-800: #643e29;
 
-  /*  */
-  --code-bg: #1e1e1e;
-  --code-text: #d4d4d4;
-
   /* SHADOWS < ruhig & soft */
-  --shadow-sm: 0 2px 8px rgba(0,0,0,0.06);
-  --shadow: 0 6px 16px rgba(0,0,0,0.08);
-  --shadow-lg: 0 12px 20px rgba(0,0,0,0.12);
-  --shadow-hover: 0 4px 12px rgba(0,0,0,0.15);
+  --shadow-lg: 0 12px 20px rgba(0,0,0,0.12); /* horizontal vertikal blur farbe+transparenz(letzte Zahl) 
+  hier:    
+   0 = keine seitliche Verschiebung
+   12px = Schatten nach unten
+   20px = weiche Unschärfe
+   */
 
   /* RADIUS */
-  --radius: 10px;
+  --radius: 15px;
   --radius-sm: 5px;
   --radius-xs: 3px;
-  --radius-pill: 50px;
-
-  /* BORDER */
-  --border-width: 2px;
-  --border-width-thick: 3px;
-  --border-width-heavy: 4px;
-  --border-width-accent: 6px;
 }

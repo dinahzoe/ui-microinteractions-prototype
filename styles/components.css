@@ -2,31 +2,89 @@
 
 /* Flexbox-Container für cards < nebeneinander, beschreibt den Container */
 .cards {
-  display: flex; 
-  justify-content: center;       /* horizontal zentrieren*/
-  align-items: stretch;          /* Kinder gleich hoch strecken, Querachse */
-  gap: var(--space-lg);          /* Abstand zwischen cards horizontal */
-  flex-wrap: wrap;               /* umbrechen auf kleineren Screens */
+  display: flex;                 
+  justify-content: center;       /* horizontal zentrieren < flex */
+  align-items: stretch;          /* Kinder gleich hoch strecken, Querachse < flex */
+  gap: var(--space-xl);          /* Abstand zwischen cards horizontal < flex */
+  flex-wrap: wrap;               /* umbrechen auf kleineren Screens < flex */
 }
 
 /* Karten mit weißem Hintergrund, Hover */
 .card {
   max-width: 200px;              /* max Breite der Karten */
-  background: var(--beige-pale);      /* weißer Hintergrund */
+  background: var(--white);      /* weißer Hintergrund */
   border-radius: var(--radius);  /* abgerundete Ecken */
   padding: var(--space-sm);      /* Innenabstand */
-  box-shadow: var(--shadow);     /* Schatten für 3D-Effekt, hebt sich ab auch ohne Hover */
-
   box-shadow: var(--shadow-lg);   /* Hover-Effekt: nach oben + größer < größerer Schatten */
   margin-bottom: var(--space-md); /* Abstand unten, sonst Karten kleben aneinander */
 }
 
 /* Hover Effekt */
 .card:hover {
-  background: var(--white); 
+  background: var(--beige-pale); 
 }
 
 /* Beim Klicken */
 .card:active {
-  background: var(--blue-table);   /* dunkler als hover */
+  background: var(--blue-extrem-light); /* dunkler als hover */
 }
+
+/* BUTTONS BASIS */
+button {
+    color: var(--beige-pale);
+    font-size: 15px;
+    font-weight: bold;
+    padding-top: var(--space-xs);
+    padding-bottom: var(--space-xs);
+    padding-left: var(--space-xs);
+    padding-right: var(--space-xs);
+    background: var(--green-light);
+    border: 1px solid var(--green-extrem-light);
+}
+
+button:hover{
+    color: var(--green-light);
+    background: var(--beige-pale);
+    border-color: var(--green-extrem-light);
+}
+
+/* ZURÜCK BUTTON */
+.button {
+    position: fixed;
+    top: var(--space-sm); /* fixed */
+    left: var(--space-sm);
+    font-weight: bold;
+    font-size: 18px;
+    padding-top: var(--space-xxs);
+    padding-bottom: var(--space-xxs);
+    padding-left: var(--space-xs);
+    padding-right: var(--space-xs);
+    border: 1px solid var(--blue);
+    border-radius: var(--radius);
+}
+
+.button:hover{
+    border-color: var(--blue-light)
+}
+
+.icon1, .icon2, .icon3 {
+    width: 100%; 
+    max-width: 200px; 
+    aspect-ratio: 1 / 1;  /* immer quadratisch */
+    margin: 0 auto;
+    background-size: contain; /* Passt das Bild so an, dass es vollständig in die Box passt (Seitenverhältnis bleibt erhalten, nichts wird abgeschnitten) */
+    background-repeat: no-repeat; /* Bild soll sich nicht widerholen */
+    background-position: center; /* Platziert das Hintergrundbild horizontal und vertikal in der Mitte */
+}
+.icon1 {
+    background-image: url("../image/icon_breath.png");
+}
+
+.icon2 {
+    background-image: url("../image/icon_focus.png");
+}
+
+.icon3 {
+    background-image: url("../image/icon_structure.png");
+}
+
