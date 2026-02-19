@@ -3,8 +3,8 @@
 chrome.runtime.onInstalled.addListener(() => {
     // Create an alarm so we have something to look at in the demo
     chrome.alarms.create('alarm', { // Timer stellen
-        delayInMinutes: 10,
-        periodInMinutes: 60 // Widerholte Meldungen
+        delayInMinutes: 0.1,
+        periodInMinutes: 1 // Widerholte Meldungen
     });
 });
 
