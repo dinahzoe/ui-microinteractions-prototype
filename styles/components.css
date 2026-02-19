@@ -45,10 +45,7 @@ button {
     color: var(--beige-100);
     font-size: 15px;
     font-weight: bold;
-    padding-top: var(--space-xs);
-    padding-bottom: var(--space-xs);
-    padding-left: var(--space-xs);
-    padding-right: var(--space-xs);
+    padding: var(--space-xs);
     background: var(--green-400);
     border: 1px solid var(--green-100);
 }
@@ -59,6 +56,14 @@ button:hover {
     border-color: var(--green-100);
 }
 
+/* Tastaturnavigation */
+button:focus-visible,
+a:focus-visible {
+    outline: 2px solid var(--blue-900);
+    outline-offset: 3px;
+    border-radius: var(--radius-sm);
+}
+
 /* ZURÜCK BUTTON */
 .btn-back {
     position: fixed;
@@ -67,10 +72,7 @@ button:hover {
     left: var(--space-sm);
     font-weight: bold;
     font-size: 18px;
-    padding-top: var(--space-2xs);
-    padding-bottom: var(--space-2xs);
-    padding-left: var(--space-xs);
-    padding-right: var(--space-xs);
+    padding: var(--space-2xs) var(--space-xs);
     border: 1px solid var(--blue-900);
     border-radius: var(--radius-lg);
 }
@@ -100,7 +102,7 @@ button:hover {
 }
 
 .icon-reset {
-    background-image: url("../image/icon_focus.png");
+    background-image: url("../image/icon_reset.png");
 }
 
 .icon-focus {

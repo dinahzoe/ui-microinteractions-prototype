@@ -16,7 +16,7 @@
     },
     "icons": {
         "16": "image/icon_breath.png",
-        "48": "image/icon_breath.png",
+        "48": "image/icon_reset.png",
         "128": "image/icon_structure.png"
     }
 }

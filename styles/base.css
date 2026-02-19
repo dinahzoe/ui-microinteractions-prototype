@@ -50,9 +50,11 @@ h1 {
     text-align: center;
     letter-spacing: var(--space-3xs);
     /* horizontaler Zwischenabstand der einzelnen Buchstaben */
+    margin-top: var(--space-sm);
+    margin-bottom: var(--space-xl);
 }
 
-h2 {
+h2, .subtitle {
     font-weight: bold;
     color: var(--beige-900);
     font-size: 25px;
@@ -62,9 +64,9 @@ h2 {
     margin-bottom: var(--space-md);
 }
 
-h2:nth-of-type(2) {
+.subtitle {
     /* das zweite <h2> auf der Seite ausgewählt */
-    margin-bottom: var(--space-xl);
+    margin-bottom: var(--space-3xl);
 }
 
 h3 {
