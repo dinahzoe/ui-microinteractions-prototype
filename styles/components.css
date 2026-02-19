@@ -48,6 +48,7 @@ button {
     padding: var(--space-xs);
     background: var(--green-400);
     border: 1px solid var(--green-100);
+    border-radius: var(--radius-lg);
 }
 
 button:hover {
