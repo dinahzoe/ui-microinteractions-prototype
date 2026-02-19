@@ -74,7 +74,7 @@ h3 {
     color: var(--green-700);
     font-size: 20px;
     text-align: center;
-    line-height: 1;
+    line-height: 1.5;
     /* Zeilenabstand < line-height regelt Zeilenabstand, Spacing-Variablen Abstände zwischen Elementen */
     margin-bottom: var(--space-sm);
     margin-top: 0;
@@ -84,7 +84,8 @@ h3 {
 p {
     text-align: center;
     color: var(--blue-900);
-    line-height: 1.8;
+    line-height: 1.5;
+    margin-bottom: var(--space-sm);
 }
 
 .h2-accent {

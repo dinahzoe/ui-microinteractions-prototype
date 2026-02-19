@@ -4,7 +4,7 @@ chrome.runtime.onInstalled.addListener(() => {
     // Create an alarm so we have something to look at in the demo
     chrome.alarms.create('alarm', { // Timer stellen
         delayInMinutes: 0.1, // erste Prüfung nach Installation/ Reload
-        periodInMinutes: 15 // Widerholte Meldungen
+        periodInMinutes: 25 // Widerholte Meldungen < Pomodoro
     });
 });
 
@@ -29,8 +29,8 @@ chrome.alarms.onAlarm.addListener(async () => { // onAlarm, wenn Timer klingelt 
             type: 'basic', // Pflicht für Notifications
             iconUrl: chrome.runtime.getURL('image/icon_organize.png'), // Wichtig, da Notification sonst oft nicht erscheint < wichtig für Chrome
             title: 'Zeit für eine Pause',
-            message: `Du hast gerade ${showAmountofTabs} Tabs offen, Zeit für Struktur!`,
-            buttons: [{ title: 'Hier klicken für deine Pause' }]
+            message: `Sie haben gerade ${showAmountofTabs} Tabs offen, Zeit für Struktur!`,
+            buttons: [{ title: 'Hier klicken für Ihre Pause' }]
         });
     }
     else {
@@ -39,8 +39,8 @@ chrome.alarms.onAlarm.addListener(async () => { // onAlarm, wenn Timer klingelt 
             type: 'basic',
             iconUrl: chrome.runtime.getURL('image/icon_break.png'),
             title: 'Zeit für eine Pause',
-            message: "Nimm dir Zeit für eine kurze Pause oder Konzentrationsübungen!",
-            buttons: [{ title: 'Hier klicken für deine Pause' }]
+            message: "Nehmen Sie sich Zeit für eine kurze Pause!",
+            buttons: [{ title: 'Hier klicken für Ihre Pause' }]
         });
     }
 });
@@ -53,7 +53,7 @@ chrome.notifications.onButtonClicked.addListener(() => { // Der Nutzer hat in de
     chrome.windows.create({ // Erstellt (öffnet) ein neues Browserfenster
         url: "html/index.html",
         width: 900,
-        height: 550,
+        height: 650,
         type: 'popup'  // öffnet ein sauberes Fenster ohne Browser-Toolbar
     })
 });
