@@ -2,89 +2,107 @@
 
 /* Flexbox-Container für cards < nebeneinander, beschreibt den Container */
 .cards {
-  display: flex;                 
-  justify-content: center;       /* horizontal zentrieren < flex */
-  align-items: stretch;          /* Kinder gleich hoch strecken, Querachse < flex */
-  gap: var(--space-xl);          /* Abstand zwischen cards horizontal < flex */
-  flex-wrap: wrap;               /* umbrechen auf kleineren Screens < flex */
+    display: flex;
+    justify-content: center;
+    /* horizontal zentrieren < flex */
+    align-items: stretch;
+    /* Kinder gleich hoch strecken, Querachse < flex */
+    gap: var(--space-xl);
+    /* Abstand zwischen cards horizontal < flex */
+    flex-wrap: wrap;
+    /* umbrechen auf kleineren Screens < flex */
 }
 
 /* Karten mit weißem Hintergrund, Hover */
 .card {
-  max-width: 200px;              /* max Breite der Karten */
-  background: var(--white);      /* weißer Hintergrund */
-  border-radius: var(--radius);  /* abgerundete Ecken */
-  padding: var(--space-sm);      /* Innenabstand */
-  box-shadow: var(--shadow-lg);   /* Hover-Effekt: nach oben + größer < größerer Schatten */
-  margin-bottom: var(--space-md); /* Abstand unten, sonst Karten kleben aneinander */
+    max-width: 200px;
+    /* max Breite der Karten */
+    background: var(--warm-100);
+    /* weißer Hintergrund */
+    border-radius: var(--radius-lg);
+    /* abgerundete Ecken */
+    padding: var(--space-sm);
+    /* Innenabstand */
+    box-shadow: var(--shadow-lg);
+    /* weicher Schatten auf allen Karten */
+    margin-bottom: var(--space-md);
+    /* Abstand unten, sonst Karten kleben aneinander */
 }
 
 /* Hover Effekt */
 .card:hover {
-  background: var(--beige-pale); 
+    background: var(--beige-100);
 }
 
 /* Beim Klicken */
 .card:active {
-  background: var(--blue-extrem-light); /* dunkler als hover */
+    background: var(--blue-100);
+    /* dunkler als hover */
 }
 
 /* BUTTONS BASIS */
 button {
-    color: var(--beige-pale);
+    color: var(--beige-100);
     font-size: 15px;
     font-weight: bold;
     padding-top: var(--space-xs);
     padding-bottom: var(--space-xs);
     padding-left: var(--space-xs);
     padding-right: var(--space-xs);
-    background: var(--green-light);
-    border: 1px solid var(--green-extrem-light);
+    background: var(--green-400);
+    border: 1px solid var(--green-100);
 }
 
-button:hover{
-    color: var(--green-light);
-    background: var(--beige-pale);
-    border-color: var(--green-extrem-light);
+button:hover {
+    color: var(--green-400);
+    background: var(--beige-100);
+    border-color: var(--green-100);
 }
 
 /* ZURÜCK BUTTON */
-.button {
+.btn-back {
     position: fixed;
-    top: var(--space-sm); /* fixed */
+    top: var(--space-sm);
+    /* fixed */
     left: var(--space-sm);
     font-weight: bold;
     font-size: 18px;
-    padding-top: var(--space-xxs);
-    padding-bottom: var(--space-xxs);
+    padding-top: var(--space-2xs);
+    padding-bottom: var(--space-2xs);
     padding-left: var(--space-xs);
     padding-right: var(--space-xs);
-    border: 1px solid var(--blue);
-    border-radius: var(--radius);
+    border: 1px solid var(--blue-900);
+    border-radius: var(--radius-lg);
 }
 
-.button:hover{
-    border-color: var(--blue-light)
+.btn-back:hover {
+    border-color: var(--blue-600)
 }
 
-.icon1, .icon2, .icon3 {
-    width: 100%; 
-    max-width: 200px; 
-    aspect-ratio: 1 / 1;  /* immer quadratisch */
+.icon-breath,
+.icon-reset,
+.icon-focus {
+    width: 100%;
+    max-width: 200px;
+    aspect-ratio: 1 / 1;
+    /* immer quadratisch */
     margin: 0 auto;
-    background-size: contain; /* Passt das Bild so an, dass es vollständig in die Box passt (Seitenverhältnis bleibt erhalten, nichts wird abgeschnitten) */
-    background-repeat: no-repeat; /* Bild soll sich nicht widerholen */
-    background-position: center; /* Platziert das Hintergrundbild horizontal und vertikal in der Mitte */
+    background-size: contain;
+    /* Passt das Bild so an, dass es vollständig in die Box passt (Seitenverhältnis bleibt erhalten, nichts wird abgeschnitten) */
+    background-repeat: no-repeat;
+    /* Bild soll sich nicht widerholen */
+    background-position: center;
+    /* Platziert das Hintergrundbild horizontal und vertikal in der Mitte */
 }
-.icon1 {
+
+.icon-breath {
     background-image: url("../image/icon_breath.png");
 }
 
-.icon2 {
+.icon-reset {
     background-image: url("../image/icon_focus.png");
 }
 
-.icon3 {
+.icon-focus {
     background-image: url("../image/icon_structure.png");
 }
-

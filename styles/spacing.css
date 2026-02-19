@@ -4,14 +4,22 @@ rem macht Layouts flexibler, skalierbar, konsistent und zugänglich < gut für m
 */
 
 :root {
-  --space-xxxs: 0.10rem;
-  --space-xxs: 0.25rem;
-  --space-xs: 0.5rem; /* sehr klein */
-  --space-sm: 1rem; /* klein */
-  --space-md: 1.5rem; /* mittel */
-  --space-lg: 2rem; /* groß */
-  --space-xl: 3rem; /* extra groß */
-  --space-2xl: 4rem; /* sehr groß */
-  --space-3xl: 5rem; /* extra sehr groß */
-  --space-4xl: 6rem; /* extra sehr groß */ 
+    --space-3xs: 0.10rem;
+    --space-2xs: 0.25rem;
+    --space-xs: 0.5rem;
+    /* sehr klein */
+    --space-sm: 1rem;
+    /* klein */
+    --space-md: 1.5rem;
+    /* mittel */
+    --space-lg: 2rem;
+    /* groß */
+    --space-xl: 3rem;
+    /* extra groß */
+    --space-2xl: 4rem;
+    /* sehr groß */
+    --space-3xl: 5rem;
+    /* extra sehr groß */
+    --space-4xl: 6rem;
+    /* extra sehr groß */
 }

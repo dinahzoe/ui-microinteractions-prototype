@@ -2,37 +2,36 @@
 Hintergrund
 */
 
-.gradientBackground {
-    width: 100%;
-    min-height: 100vh; /* Mindestens so hoch wie das sichtbare Browserfenster (Viewport-Höhe) */
-    background-size: 200% 200%; /* macht den Verlauf größer */ 
+.bg-gradient {
+    min-height: 100vh;
+    /* Mindestens so hoch wie das sichtbare Browserfenster (Viewport-Höhe) */
+    background-size: 200% 200%;
+    /* macht den Verlauf größer */
     background-image: repeating-linear-gradient(-45deg,
-     /* Repeating-linear-gradient = wiederholt den Verlauf als Muster
+            /* Repeating-linear-gradient = wiederholt den Verlauf als Muster
         -45deg = Verlauf läuft diagonal nach unten rechts */
-            var(--beige-pale) 0%, /* Startfarbe bei 0% */
-            var(--beige-light) 12%,
-            var(--green-extrem-light) 24%,
-            var(--rose) 36%,
-            var(--beige-soft) 48%,
-            var(--green-extrem-light) 60%,
-            var(--blue-extrem-light) 72%,
-            var(--beige-light) 86%,
-            var(--beige-pale) 100%);
-    animation: diagonal 10s linear infinite alternate; /* alternate = Boomerang */
+            var(--beige-100) 0%,
+            /* Startfarbe bei 0% */
+            var(--beige-400) 12%,
+            var(--green-100) 24%,
+            var(--warm-200) 36%,
+            var(--beige-200) 48%,
+            var(--green-100) 60%,
+            var(--blue-100) 72%,
+            var(--beige-400) 86%,
+            var(--beige-100) 100%);
+    animation: diagonal 10s linear infinite alternate;
+    /* alternate = Boomerang */
 }
 
 @keyframes diagonal {
     0% {
         background-position: 0% 50%
-         /* Start: Hintergrund links (0%) und vertikal mittig (50%) */
+            /* Start: Hintergrund links (0%) und vertikal mittig (50%) */
     }
 
     100% {
         background-position: 100% 50%
-        /* Ende: Hintergrund rechts (100%) und vertikal mittig (50%) < dadurch wirkt es, als würde der Verlauf horizontal wandern */
+            /* Ende: Hintergrund rechts (100%) und vertikal mittig (50%) < dadurch wirkt es, als würde der Verlauf horizontal wandern */
     }
-}
-
-.h2Focus {
-    color: var(--blue);
 }

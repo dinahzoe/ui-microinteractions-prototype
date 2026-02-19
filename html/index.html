@@ -1,4 +1,5 @@
-<!-- inspiriert/erlernte Dinge aus dem Kurs Frontend–Design Web: Fortgeschrittene Techniken -->
+<!-- inspiriert/erlernte Dinge aus dem Kurs Frontend–Design Web: Fortgeschrittene Techniken 
+ Klassenbezeichnungen sind im kebab-case (Bindestrich-Notation) benannt -->
 
 <!DOCTYPE html>
 <html lang="de">
@@ -12,11 +13,12 @@
     <link rel="stylesheet" href="../styles/styles.css" />
 </head>
 
-<body class="background">
-
+<body class="bg-default">
+    <header>
+        <h1>Mind Reset</h1>
+    </header>
     <!-- main < Hauptinhalt der Seite -->
     <main>
-        <h1>Mind Reset</h1>
         <h2>Was brauchen Sie gerade?</h2>
         <h2>Klicken Sie auf die passende Karte</h2>
 
@@ -25,7 +27,9 @@
         <section class="cards" aria-label="Auswahl">
             <!-- Karte 1 -->
             <a class="card" href="breathing.html">
-                <div class="icon1"></div>
+                <figure>
+                    <div class="icon-breath" role="img" aria-label="Atemübungs-Icon"></div>
+                </figure>
                 <h3>Atemübung gegen Stress</h3>
                 <p>Kurzer Atem-Reset mit ruhiger Animation, falls Sie sich gerade gestresst
                     fühlen
@@ -34,7 +38,9 @@
 
             <!-- Karte 2 -->
             <a class="card" href="reset.html">
-                <div class="icon2"></div>
+                <figure>
+                    <div class="icon-reset" role="img" aria-label="Reset-Icon"></div>
+                </figure>
                 <h3>Visual Reset</h3>
                 <p>Sanfter Farbverlauf zum Runterkommen und kurz Abstand vom aktuellen Moment zu
                     gewinnen.</p>
@@ -42,7 +48,9 @@
 
             <!-- Karte 3 -->
             <a class="card" href="focus.html">
-                <div class="icon3"></div>
+                <figure>
+                    <div class="icon-focus" role="img" aria-label="Fokus-Icon"></div>
+                </figure>
                 <h3>Fokus & Struktur</h3>
                 <p>Kleine Schritte gegen Entscheidungsstress und eine kurze Konzentrationsübung.
                 </p>

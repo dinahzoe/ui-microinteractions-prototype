@@ -5,33 +5,36 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Seite auf Handy/ Tablet etc. richtig skalieren -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Seite auf Handy/ Tablet etc. richtig skalieren -->
     <title>Atemübung</title>
     <!-- Styling der HTML Dateien -->
     <link rel="stylesheet" href="../styles/styles.css" />
 </head>
 
-<body class="backgroundBreathing">
-
+<body class="bg-breathing">
+    <header>
+        <h1>Atemübung</h1>
+    </header>
     <!-- main < eigentlicher Beginn der Seite -->
     <main>
 
-        <h1>Atemübung</h1>
+        <nav aria-label="Seitennavigation">
+            <a href="index.html" class="btn-back" aria-label="Zurück zur Startseite">← Zurück</a>
+        </nav>
 
-        <div class="ball" aria-hidden="true"></div> <!-- Screenreader sollen das Element ignorieren -->
+        <div class="breath-ball" aria-hidden="true"></div> <!-- Screenreader sollen das Element ignorieren -->
         <p class="inhale">Einatmen</p>
         <!-- wird Kugel größer = dieser Part wird eingeplendet und Part "Ausatmen" wird ausgeblendet -->
         <p class="exhale">Ausatmen</p>
         <!-- wird Kugel kleiner = dieser Part wird eingeplendet und Part "Einatmen" wird ausgeblendet -->
 
-        <a href="mainWindow.html" class="button">← Zurück</a>
-
-
-        <section class="selfReflectionForm" aria-label="Selbstreflexion">
+        <section class="reflection-form" aria-label="Selbstreflexion">
             <!-- Formular soll erst eingeblendet werden wenn die Atemübung vorbei ist und Kugel ausgeblendet wird nach Abschluss -->
 
             <h2>Kurze Selbstreflexion</h2>
-            <form action="https://formspree.io/f/xgolygbo" method="POST"> <!-- Formular wird über Formspree verschickt -->
+            <form action="https://formspree.io/f/xgolygbo" method="POST">
+                <!-- Formular wird über Formspree verschickt -->
                 <fieldset>
                     <legend>Fühlen Sie sich ruhiger?</legend>
                     <label for="feedback1">Ihre Antwort</label>
@@ -46,7 +49,7 @@
                         placeholder="z. B. Ja, sie hat mir geholfen bei...">
                 </fieldset>
 
-                <div class="layout">
+                <div class="form-actions">
                     <button type="submit">Anonym Abschicken</button>
                 </div>
             </form>

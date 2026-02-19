@@ -56,7 +56,10 @@ chrome.notifications.onButtonClicked.addListener(() => { // Der Nutzer hat in de
 });
 
 
+// json: https://developer.mozilla.org/de/docs/Mozilla/Add-ons/WebExtensions/manifest.json/background https://developer.chrome.com/docs/extensions/reference/manifest?hl=de"
+
 // Die Benachrichtigung wurde durch eine Nutzeraktion geschlossen
 //chrome.notifications.onClosed.addListener(() => {
 //  chrome.notifications.clear("Take A Break");
 //});
+

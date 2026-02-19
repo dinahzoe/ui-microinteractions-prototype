@@ -8,9 +8,15 @@
         "alarms",
         "tabs"
     ],
-    "_comment": "erlaubt der Extension, Benachrichtigungen anzuzeigen, https://developer.chrome.com/docs/extensions/reference/manifest?hl=de",
     "background": {
-        "service_worker": "main.js",
-        "_comment": "https://developer.mozilla.org/de/docs/Mozilla/Add-ons/WebExtensions/manifest.json/background"
+        "service_worker": "main.js"
+    },
+    "action": {
+        "default_popup": "html/index.html"
+    },
+    "icons": {
+        "16": "image/icon_breath.png",
+        "48": "image/icon_breath.png",
+        "128": "image/icon_structure.png"
     }
 }

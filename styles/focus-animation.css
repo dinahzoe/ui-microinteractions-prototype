@@ -1,19 +1,24 @@
 /* Kreis */
-.ballFokus {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background: var(--beige-mid);
-  animation: follow 10s infinite; 
-  margin: var(--space-xl) auto;
+.focus-ball {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: var(--beige-600);
+    animation: follow 10s infinite;
+    margin: var(--space-xl) auto;
 }
 
 @keyframes follow {
-  0%   { transform: translateY(0); }
-  50%  { transform: translateY(225px); } /* 250px runter auf Y Achse */
-  100% { transform: translateY(0); }
-}
+    0% {
+        transform: translateY(0);
+    }
 
-.h2Focus {
-    color: var(--green-light);
+    50% {
+        transform: translateY(225px);
+    }
+
+    /* 250px runter auf Y Achse */
+    100% {
+        transform: translateY(0);
+    }
 }

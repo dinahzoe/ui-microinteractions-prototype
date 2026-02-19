@@ -1,0 +1,46 @@
+/* RESET: gleiche Basis in allen Browsern */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    /* padding & border in width einberechnet */
+    margin: 0;
+    /* alle Standard-Außenabstände entfernen */
+    padding: 0;
+    /* alle Standard-Innenabstände entfernen */
+}
+
+:root {
+    scroll-behavior: smooth;
+    /* sanftes Scrollen */
+    -moz-text-size-adjust: none;
+    /* Firefox: Text nicht automatisch skalieren */
+    -webkit-text-size-adjust: none;
+    /* Safari/Chrome: Text nicht automatisch skalieren */
+    text-size-adjust: none;
+    /* verhindert automatische Schriftgrößenanpassung */
+}
+
+body {
+    min-block-size: 100vh;
+    /* Seite mindestens volle Höhe */
+}
+
+img,
+picture,
+svg,
+video {
+    display: block;
+    /* keine Lücken unter Bildern */
+    max-inline-size: 100%;
+    /* nie breiter als Container */
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+    /* Schrift vom Elternelement übernehmen */
+}

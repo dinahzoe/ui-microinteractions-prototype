@@ -12,15 +12,20 @@
     <link rel="stylesheet" href="../styles/styles.css" />
 </head>
 
-<body class="gradientBackground">
-
+<body class="bg-gradient">
+    <header>
+        <h1>Reset</h1>
+    </header>
     <!-- main < eigentlicher Beginn der Seite -->
     <main>
 
-        <h1>Reset</h1>
-        <h2 class="h2Focus">Nehmen Sie sich eine kurze Pause um abzuschalten</h2>
+        <nav aria-label="Seitennavigation">
+            <a href="index.html" class="btn-back" aria-label="Zurück zur Startseite">← Zurück</a>
+        </nav>
 
-        <div class="noteIdeas"> <!-- Notiz mit Ideen eiblenden wenn man über den Button hovert -->
+        <h2 class="h2-accent">Nehmen Sie sich eine kurze Pause um abzuschalten</h2>
+
+        <div class="note-ideas"> <!-- Notiz mit Ideen eiblenden wenn man über den Button hovert -->
             <button>Ideen für deine Pause</button>
             <ul class="note" aria-label="Übungsschritte">
                 <li class="card">Steh kurz auf und strecke dich für 30 Sekunden.</li>
@@ -28,8 +33,6 @@
                 <li class="card">Schau für einen Moment aus dem Fenster und entspanne deine Augen.</li>
             </ul>
         </div>
-
-        <a href="mainWindow.html" class="button">← Zurück</a>
 
     </main>
 

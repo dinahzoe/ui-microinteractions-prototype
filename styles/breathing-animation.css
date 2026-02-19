@@ -1,39 +1,47 @@
 /* Kreis */
-.ball {
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-  background: var(--white);
-  animation: breathe 10s 4 ease-in-out forwards; /* Widerholung ist 4 mal, forwards wichtig damit Übergang zwischen Ball und Form optisch stimmt */
-  margin: var(--space-3xl) auto;
+.breath-ball {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background: var(--warm-100);
+    animation: breathe 10s 4 ease-in-out forwards;
+    /* Widerholung ist 4 mal, forwards wichtig damit Übergang zwischen Ball und Form optisch stimmt */
+    margin: var(--space-3xl) auto;
 }
 
 /* Einatmen/ Ausatmen Text */
 .inhale {
-  animation: inhaleText 10s 4 forwards; /* Widerholung ist 4 mal, forwards wichtig damit animation nach der letzten Widerholung beim Endzustand bleibt also opacity = 0 */
-  font-size: 24px;
+    animation: inhaleText 10s 4 forwards;
+    /* Widerholung ist 4 mal, forwards wichtig damit animation nach der letzten Widerholung beim Endzustand bleibt also opacity = 0 */
+    font-size: 24px;
 }
 
 .exhale {
-  animation: exhaleText 10s 4 forwards;
-  font-size: 24px;
+    animation: exhaleText 10s 4 forwards;
+    font-size: 24px;
+}
+
+main {
+    position: relative;
 }
 
 /* Beide Texte exakt übereinanderlegen */
 .inhale,
 .exhale {
-  position: absolute; /* Position relativ zum nächsten Eltern-Element < body */
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,450%); /* mittig, tiefer plaziert */
-  color: var(--green-soft);
+    position: absolute;
+    /* Position relativ zum nächsten Eltern-Element < main */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -200%);
+    /* mittig, tiefer plaziert */
+    color: var(--green-600);
 }
 
 /* Formular erst nach 40s anzeigen */
-.selfReflectionForm {
-  opacity: 0;
-  animation: showForm 5s forwards;
-  animation-delay: 40s;
+.reflection-form {
+    opacity: 0;
+    animation: showForm 5s forwards;
+    animation-delay: 40s;
 }
 
 /* Animationen 
@@ -41,34 +49,92 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@keyframes
 https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/transform-function/scale
 */
 
-@keyframes breathe { /* @keyframes = Beschreibt die Schritte einer Animation */
-  0%   { transform: scale(0.8); }
-  50%  { transform: scale(1.2); }
-  100% { transform: scale(0.8); }
+@keyframes breathe {
+
+    /* @keyframes = Beschreibt die Schritte einer Animation */
+    0% {
+        transform: scale(0.8);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(0.8);
+    }
 }
 
 @keyframes inhaleText {
-  0%   { opacity: 0; }
-  20%   { opacity: 0.3; }
-  30%  { opacity: 0.7; }
-  40%  { opacity: 0.6; }
-  50%  { opacity: 0; }
-  70%  { opacity: 0; }
-  100% { opacity: 0; }
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0.3;
+    }
+
+    30% {
+        opacity: 0.7;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    70% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
 
 @keyframes exhaleText {
-  0%   { opacity: 0; }
-  20%   { opacity: 0; }
-  45%  { opacity: 0; }
-  50%  { opacity: 0; }
-  70%  { opacity: 0.3; }
-  85%  { opacity: 0.7; }
-  100% { opacity: 0; }
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0;
+    }
+
+    45% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    70% {
+        opacity: 0.3;
+    }
+
+    85% {
+        opacity: 0.7;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
 
 @keyframes showForm {
-  0%   { opacity: 0; }
-  50%  { opacity: 0.5; }
-  100% { opacity: 1; }
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }

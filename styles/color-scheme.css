@@ -1,44 +1,42 @@
+/* Farbvariablen sind als Design Tokens mit numerischer Abstufung (z. B. 100–900) strukturiert 
+z.B. 900 = sehr dunkel, 100 = sehr hell */
 :root {
 
-  /* natürliches blau */
-  --blue: #495b6d;
-  --blue-light: #8994a4;
-  --blue-soft: #b2c7d3;
-  --blue-extrem-light: #d4dce0;
+    /* natürliches blau */
+    --blue-900: #495b6d;
+    --blue-600: #8994a4;
+    --blue-300: #b2c7d3;
+    --blue-100: #d4dce0;
 
-  /* natürliches grün */
-  --green-dark: #272f15;
-  --green-soft: #566352;
-  --green-light: #8c977f;
-  --green-extrem-light:#e2ddcb;
+    /* natürliches grün */
+    --green-900: #272f15;
+    --green-700: #444637;
+    --green-600: #566352;
+    --green-400: #8c977f;
+    --green-100: #e2ddcb;
 
-  /* neutrale Farben beige/rosa */
-  --beige-dark: #665241;
-  --beige-mid: #ab9b8c;
-  --beige-light: #c2bbb2;
-  --beige-soft: #e1d6c9;
-  --beige-pale: #f5ece0;
-  --apricot: #ddbe9c;
-  --rose: #efcfbf;
+    /* neutrale Farben beige/rosa */
+    --beige-900: #665241;
+    --beige-600: #ab9b8c;
+    --beige-400: #c2bbb2;
+    --beige-200: #e1d6c9;
+    --beige-100: #f5ece0;
 
-  /* Basisfarben */
-  --white: #fceee6;
-  --gray-100: #e2c4c2;
-  --gray-200: #c39064;
-  --gray-300: #94986a;
-  --gray-400: #444637;
-  --gray-800: #643e29;
+    --warm-400: #ddbe9c;
+    --warm-200: #efcfbf;
+    --warm-100: #fceee6;
 
-  /* SHADOWS < ruhig & soft */
-  --shadow-lg: 0 12px 20px rgba(0,0,0,0.12); /* horizontal vertikal blur farbe+transparenz(letzte Zahl) 
+    /* SHADOWS < ruhig & soft */
+    --shadow-lg: 0 12px 20px rgba(0, 0, 0, 0.12);
+    /* horizontal vertikal blur farbe+transparenz(letzte Zahl) 
   hier:    
    0 = keine seitliche Verschiebung
    12px = Schatten nach unten
    20px = weiche Unschärfe
    */
 
-  /* RADIUS */
-  --radius: 15px;
-  --radius-sm: 5px;
-  --radius-xs: 3px;
+    /* RADIUS */
+    --radius-lg: 15px;
+    --radius-md: 5px;
+    --radius-sm: 3px;
 }
