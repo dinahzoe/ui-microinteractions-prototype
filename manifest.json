@@ -1,8 +1,8 @@
 {
     "manifest_version": 3,
-    "name": "Nimm eine Pause",
+    "name": "Pausenbasierte Fokusunterstützung",
     "version": "1.0.0",
-    "description": "Browserextension mit basic permissions",
+    "description": "Browser-Erweiterung zur Reduktion wahrgenommener Belastung durch strukturierte Pausen",
     "permissions": [
         "notifications",
         "alarms",
@@ -15,8 +15,8 @@
         "default_popup": "html/index.html"
     },
     "icons": {
-        "16": "image/icon_organize.png",
-        "48": "image/icon_organize.png",
-        "128": "image/icon_organize.png"
+        "16": "image/icon_start.png",
+        "48": "image/icon_start.png",
+        "128": "image/icon_start.png"
     }
 }
