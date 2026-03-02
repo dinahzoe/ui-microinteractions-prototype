@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "Pausenbasierte Fokusunterstützung",
     "version": "1.0.0",
-    "description": "Browser-Erweiterung zur Reduktion wahrgenommener Belastung durch strukturierte Pausen",
+    "description": "Browser-Erweiterung zur Reduktion wahrgenommener Belastung durch strukturierte Pausen.",
     "permissions": [
         "notifications",
         "alarms",
