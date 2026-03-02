@@ -34,12 +34,6 @@
     background: var(--beige-100);
 }
 
-/* Beim Klicken */
-.card:active {
-    background: var(--blue-100);
-    /* dunkler als hover */
-}
-
 /* BUTTONS BASIS */
 button {
     color: var(--beige-100);
