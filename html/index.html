@@ -19,14 +19,14 @@
     </header>
     <!-- main < Hauptinhalt der Seite -->
     <main>
-        <h2>Was brauchen Sie gerade?</h2>
+        <h2 class="heading-personalize">Was brauchen Sie gerade?</h2>
         <p class="subtitle">Klicken Sie auf die passende Karte</p>
 
         <!-- Karten führen zu einzelnen Unterseiten < Hauptnavigation über große Buttons 
      aria-label = Barrierefreiheit: Screenreadern (für blinde Menschen) -->
         <section class="cards" aria-label="Auswahl">
             <!-- Karte 1 -->
-            <a class="card" href="breathing.html">
+            <a class="card card-breath" href="breathing.html">
 
                 <div class="icon-breath" role="img" aria-label="Atemübungs-Icon"></div>
 
@@ -37,7 +37,7 @@
             </a>
 
             <!-- Karte 2 -->
-            <a class="card" href="reset.html">
+            <a class="card card-reset" href="reset.html">
                 <div class="icon-reset" role="img" aria-label="Reset-Icon"></div>
                 <h3>Visual Reset</h3>
                 <p>Sanfter Farbverlauf zum Runterkommen und kurz Abstand vom aktuellen Moment zu
@@ -45,7 +45,7 @@
             </a>
 
             <!-- Karte 3 -->
-            <a class="card" href="focus.html">
+            <a class="card card-focus" href="focus.html">
                 <div class="icon-focus" role="img" aria-label="Fokus-Icon"></div>
                 <h3>Fokus & Struktur</h3>
                 <p>Kleine Schritte gegen Entscheidungsstress und eine kurze Konzentrationsübung.
@@ -53,6 +53,7 @@
             </a>
         </section>
     </main>
+    <script src="index.js"></script>
 
 </body>
 

@@ -29,9 +29,20 @@
     /* Abstand unten, sonst Karten kleben aneinander */
 }
 
+.card-gelesen {
+    opacity: 0.4;
+    text-decoration: line-through;
+}
+
 /* Hover Effekt */
 .card:hover {
     background: var(--beige-100);
+    cursor: pointer; /* zeigt den Hand-Cursor */
+}
+
+/* Karte hervorheben mit index.js */
+.card-highlight {
+    background-color: var(--green-100);
 }
 
 /* BUTTONS BASIS */

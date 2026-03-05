@@ -37,6 +37,7 @@ input {
     border: 1px solid var(--blue-900);
     /* heller Rahmen */
     border-radius: var(--radius-sm);
+    padding: var(--space-xs);
 }
 
 button[type="submit"] {

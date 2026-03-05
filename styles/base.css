@@ -54,7 +54,7 @@ h1 {
     margin-bottom: var(--space-xl);
 }
 
-h2, .subtitle {
+h2 {
     font-weight: bold;
     color: var(--beige-900);
     font-size: 25px;
@@ -64,7 +64,24 @@ h2, .subtitle {
     margin-bottom: var(--space-md);
 }
 
+/* Überschrift für index.js < personalisierter Fall */
+.heading-personalized {
+    white-space: pre-line; /* für \n in js */
+    font-weight: bold;
+    color: var(--beige-900);
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.5;
+    /* Zeilenabstand < line-height regelt Zeilenabstand, Spacing-Variablen Abstände zwischen Elementen */
+    margin-bottom: var(--space-2xl);
+}
+
 .subtitle {
+    font-weight: bold;
+    color: var(--beige-900);
+    font-size: 25px;
+    text-align: center;
+    line-height: 1.5;
     /* das zweite <h2> auf der Seite ausgewählt */
     margin-bottom: var(--space-3xl);
 }

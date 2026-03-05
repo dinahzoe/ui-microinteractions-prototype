@@ -40,7 +40,7 @@
 }
 
 /* end */
-.note-ideas button:focus+.note {
+.note-ideas button:focus ~ .note { /* ~ wählt alle nachfolgenden Geschwister aus, ohne das würde die Liste wieder verschwinden, sobald der Button nicht mehr fokussiert ist < klicken auf Button: Notes erscheinen, klicken auf Cards: Notes bleiben sichtbar (+ geht nur für das direkt nächste Element, greift hier nicht) */
     transform: translate(0, 0);
     /* Element ist an normaler Position (sichtbar im Bildschirm)
     translateY(100%) verschiebt das Element um 100 % seiner eigenen Höhe nach unten < 100 % bezieht sich immer auf die Größe des Elements selbst, nicht des Containers */
@@ -51,4 +51,12 @@
 .note-ideas .card {
     width: 320px;
     /* breiter */
+}
+
+.note-hint {
+    display: block;
+    text-align: right;
+    opacity: 0.5;
+    font-size: 10px;
+    margin: var(--space-sm);
 }
