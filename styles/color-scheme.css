@@ -5,7 +5,7 @@ z.B. 900 = sehr dunkel, 100 = sehr hell */
     /* natürliches blau */
     --blue-900: #495b6d;
     --blue-600: #8994a4;
-    --blue-300: #b2c7d3;
+    --blue-300: #b2c7d3; /* wird nicht verwendet */
     --blue-100: #d4dce0;
 
     /* natürliches grün */
@@ -22,7 +22,7 @@ z.B. 900 = sehr dunkel, 100 = sehr hell */
     --beige-200: #e1d6c9;
     --beige-100: #f5ece0;
 
-    --warm-400: #ddbe9c;
+    --warm-400: #ddbe9c; /* wird nicht verwendet */
     --warm-200: #efcfbf;
     --warm-100: #fceee6;
 

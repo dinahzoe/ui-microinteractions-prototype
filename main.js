@@ -3,8 +3,8 @@
 chrome.runtime.onInstalled.addListener(() => {
     // Create an alarm so we have something to look at in the demo
     chrome.alarms.create('alarm', { // Timer stellen
-        delayInMinutes: 1, // erste Prüfung nach Installation/ Reload
-        periodInMinutes: 25 // Widerholte Meldungen < Pomodoro
+        delayInMinutes: 0.1, // erste Prüfung nach Installation/ Reload
+        periodInMinutes: 30 // Widerholte Meldungen < Pomodoro
     });
 });
 
@@ -23,7 +23,7 @@ chrome.alarms.onAlarm.addListener(async () => { // onAlarm, wenn Timer klingelt 
 
     const showAmountofTabs = await countTabs();
 
-    if (showAmountofTabs > 10) {
+    if (showAmountofTabs > 10) { // ab 10 oder nach 10??????????
 
         chrome.notifications.create({
             type: 'basic', // Pflicht für Notifications
@@ -60,9 +60,3 @@ chrome.notifications.onButtonClicked.addListener(() => { // Der Nutzer hat in de
 
 
 // json: https://developer.mozilla.org/de/docs/Mozilla/Add-ons/WebExtensions/manifest.json/background https://developer.chrome.com/docs/extensions/reference/manifest?hl=de"
-
-// Die Benachrichtigung wurde durch eine Nutzeraktion geschlossen
-//chrome.notifications.onClosed.addListener(() => {
-//  chrome.notifications.clear("Take A Break");
-//});
-

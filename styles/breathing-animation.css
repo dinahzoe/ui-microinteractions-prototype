@@ -4,20 +4,20 @@
     height: 250px;
     border-radius: 50%;
     background: var(--warm-100);
-    animation: breathe 10s 4 ease-in-out forwards;
-    /* Widerholung ist 4 mal, forwards wichtig damit Übergang zwischen Ball und Form optisch stimmt */
+    animation: breathe 10s 6 ease-in-out forwards;
+    /* Widerholung ist 6 mal, forwards wichtig damit Übergang zwischen Ball und Form optisch stimmt */
     margin: var(--space-3xl) auto;
 }
 
 /* Einatmen/ Ausatmen Text */
 .inhale {
-    animation: inhaleText 10s 4 forwards;
-    /* Widerholung ist 4 mal, forwards wichtig damit animation nach der letzten Widerholung beim Endzustand bleibt also opacity = 0 */
+    animation: inhaleText 10s 6 forwards;
+    /* Widerholung ist 6 mal, forwards wichtig damit animation nach der letzten Widerholung beim Endzustand bleibt also opacity = 0 */
     font-size: 24px;
 }
 
 .exhale {
-    animation: exhaleText 10s 4 forwards;
+    animation: exhaleText 10s 6 forwards;
     font-size: 24px;
 }
 
@@ -37,11 +37,11 @@ main {
     color: var(--green-600);
 }
 
-/* Formular erst nach 40s anzeigen */
+/* Formular erst nach 60s anzeigen */
 .reflection-form {
     opacity: 0;
     animation: showForm 5s forwards;
-    animation-delay: 40s;
+    animation-delay: 60s;
 }
 
 /* Animationen 

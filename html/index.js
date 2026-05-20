@@ -9,13 +9,13 @@ chrome.tabs.query({}, tabs => { // Alle offenen Browser-Tabs abfragen
 
     if (tabs.length > 10) {
         heading.textContent =
-            "Sie sind hier, um Struktur zu erhalten.\nDie hervorgehobene Karte empfiehlt sich, andere Optionen stehen Ihnen frei.";
+            "Sie sind hier, um eine Pause zu nehmen.\nDie hervorgehobene Karte empfiehlt sich, andere Optionen stehen Ihnen frei.";
         heading.classList.add('heading-personalized'); // neue Klasse für personalisierten Fall, in JS hinzufügen, da sie nur in CSS existiert, aber noch nicht im HTML
         document.querySelector('.card-focus').classList.add('card-highlight'); // in components.css neuer Style erstellt um Karte hervorzuheben, nur bei bestimmter Bedingung < gleiches Prinzip wie bei Text 
         document.querySelector('.subtitle').style.display = 'none';
     } else {
         heading.textContent =
-            "Sie sind hier, um eine Pause zu nehmen.\nDie hervorgehobene Karte empfiehlt sich, andere Optionen stehen Ihnen frei.";
+            "Sie sind hier, um eine Pause zu nehmen.\nDie hervorgehobenen Karten epfehlen sich, andere Optionen stehen Ihnen frei.";
         heading.classList.add('heading-personalized');
         document.querySelector('.card-breath').classList.add('card-highlight');
         document.querySelector('.card-reset').classList.add('card-highlight');
