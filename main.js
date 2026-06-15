@@ -1,9 +1,8 @@
 // https://developer.chrome.com/docs/extensions/reference/api/alarms?hl=de
 // Alarm festlegen
 chrome.runtime.onInstalled.addListener(() => {
-    // Create an alarm so we have something to look at in the demo
     chrome.alarms.create('alarm', { // Timer stellen
-        delayInMinutes: 0.1, // erste Prüfung nach Installation/ Reload
+        delayInMinutes: 30, // erste Prüfung nach Installation/ Reload
         periodInMinutes: 30 // Widerholte Meldungen < Pomodoro
     });
 });
@@ -23,7 +22,7 @@ chrome.alarms.onAlarm.addListener(async () => { // onAlarm, wenn Timer klingelt 
 
     const showAmountofTabs = await countTabs();
 
-    if (showAmountofTabs > 10) { // ab 10 oder nach 10??????????
+    if (showAmountofTabs > 10) { // ab 11 Tabs
 
         chrome.notifications.create({
             type: 'basic', // Pflicht für Notifications
