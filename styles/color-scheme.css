@@ -29,10 +29,10 @@ z.B. 900 = sehr dunkel, 100 = sehr hell */
     /* SHADOWS < ruhig & soft */
     --shadow-lg: 0 12px 20px rgba(0, 0, 0, 0.12);
     /* horizontal vertikal blur farbe+transparenz(letzte Zahl) 
-  hier:    
-   0 = keine seitliche Verschiebung
-   12px = Schatten nach unten
-   20px = weiche Unschärfe
+        hier:    
+        0 = keine seitliche Verschiebung
+        12px = Schatten nach unten
+        20px = weiche Unschärfe
    */
 
     /* RADIUS */
