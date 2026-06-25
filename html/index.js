@@ -15,7 +15,7 @@ chrome.tabs.query({}, tabs => { // Alle offenen Browser-Tabs abfragen
         document.querySelector('.subtitle').style.display = 'none';
     } else {
         heading.textContent =
-            "Sie sind hier, um eine Pause zu nehmen.\nDie hervorgehobenen Karten epfehlen sich, andere Optionen stehen Ihnen frei.";
+            "Sie sind hier, um eine Pause zu nehmen.\nDie hervorgehobenen Karten empfehlen sich, andere Optionen stehen Ihnen frei.";
         heading.classList.add('heading-personalized');
         document.querySelector('.card-breath').classList.add('card-highlight');
         document.querySelector('.card-reset').classList.add('card-highlight');
