@@ -10,11 +10,6 @@ body {
     /* horizontaler Abstand */
     font-family: system-ui;
     /* Schriftart */
-
-    width: 900px;
-    /* Breite des Toolbar-Popups */
-    height: 650px;
-    /* Höhe des Toolbar-Popups */
 }
 
 /* LINKS und HOVER */

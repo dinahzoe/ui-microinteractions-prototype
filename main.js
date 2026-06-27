@@ -2,7 +2,7 @@
 // Alarm festlegen
 chrome.runtime.onInstalled.addListener(() => {
     chrome.alarms.create('alarm', { // Timer stellen
-        delayInMinutes: 30, // erste Prüfung nach Installation/ Reload
+        delayInMinutes: 25, // erste Prüfung nach Installation/ Reload
         periodInMinutes: 30 // Widerholte Meldungen < Pomodoro
     });
 });
