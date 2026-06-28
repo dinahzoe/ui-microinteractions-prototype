@@ -17,7 +17,6 @@ async function countTabs() { // async/await wichtig, da chrome.tabs.query asynch
 
 // https://developer.chrome.com/docs/extensions/develop/ui/notify-users?hl=de
 // https://developer.chrome.com/docs/extensions/reference/api/notifications?hl=de#type-NotificationOptions
-// json code notifications, nutzt genau diese api von dort, um nachricht zu erzeugen 
 chrome.alarms.onAlarm.addListener(async () => { // onAlarm, wenn Timer klingelt < Code ausführen
 
     const showAmountofTabs = await countTabs();
